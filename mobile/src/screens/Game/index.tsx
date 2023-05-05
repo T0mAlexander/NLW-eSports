@@ -25,15 +25,16 @@ export function Game() {
     nav.goBack()
   }
 
+  //? Troque o 192.168.0.0 pelo IPV4 da sua máquina
   async function getDiscordUser (adsId: string) {
-    fetch(`http://192.168.18.26:3000/ads/${adsId}/discord`)
+    fetch(`http://192.168.0.0:3000/ads/${adsId}/discord`)
     .then(response => response.json())
     .then(data => SetDuoChoosed(data.discord) )
   }
 
   //* Backend API Connection
   useEffect(() => {
-    fetch(`http://192.168.18.26:3000/games/${game.id}/ads`)
+    fetch(`http://192.168.0.0:3000/games/${game.id}/ads`)
       .then(response => response.json())
       .then(data => setDuo(data))
   }, [])

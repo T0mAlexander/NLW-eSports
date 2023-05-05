@@ -7,6 +7,7 @@ import { useEffect, useState } from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { Background } from '../../components/Background';
 import { useNavigation } from '@react-navigation/native'
+import React from 'react';
 
 
 export function Home() {
@@ -18,9 +19,9 @@ export function Home() {
     nav.navigate('game', {id, title, bannerUrl})
   }
 
-  //* Informações do backend
+  //? Troque o 192.168.0.0 pelo IPV4 da sua máquina
   useEffect(() => { 
-    fetch('http://192.168.18.26:3000/games')
+    fetch('http://192.168.0.0:3000/games')
       .then(response => response.json())
       .then(data => setGames(data))
   }, [])
