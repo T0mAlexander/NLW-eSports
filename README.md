@@ -89,7 +89,7 @@ npm run dev
 
 Este projeto utiliza o SQLite. A URL de conexão é determinada por uma variável de ambiente disponível no arquivo [.env.example](https://github.com/T0mAlexander/NLW-eSports/blob/main/server/src/.env.example) em que seu valor deverá ser o caminho relativo até o arquivo no formato **.sqlite** gerado na pasta [database](https://github.com/T0mAlexander/NLW-eSports/tree/main/server/src/database)
 
-## Tabela Game 🎮
+### Tabela Game 🎮
 
 Representa um jogo na aplicação.
 
@@ -100,7 +100,7 @@ Representa um jogo na aplicação.
 | bannerUrl    | URL da imagem do banner do jogo.                           |
 | ads          | Relação com os anúncios publicados para este jogo.          |
 
-## Tabela Ad 📢
+### Tabela Ad 📢
 
 Representa um anúncio publicado para um jogo na aplicação.
 
