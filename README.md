@@ -102,19 +102,19 @@ Representa um jogo na aplicação.
 
 ### Tabela Ad 📢
 
-Representa um anúncio publicado para um jogo na aplicação.
+Representa um anúncio de procura por parceiro.
 
 | Coluna       | Descrição                                                                        |
 |--------------|----------------------------------------------------------------------------------|
 | id           | ID do anúncio (UUID).                                                            |
 | gameId       | ID do jogo ao qual o anúncio está vinculado.                                      |
-| name         | Nome do anunciante.                                                              |
+| name         | Nome do anunciante.                                                               |
 | yearsPlaying | Quantidade de anos que o anunciante joga o jogo.                                  |
-| discord      | Nome do usuário do Discord do anunciante.                                        |
+| discord      | Nome do usuário do Discord do anunciante.                                         |
 | weekDays     | Dias da semana que o anunciante está disponível para jogar. Separados por vírgula.|
 | hourStart    | Horário de início em que o anunciante está disponível para jogar.                 |
 | hourEnd      | Horário de término em que o anunciante está disponível para jogar.                |
-| useVoip      | Se o anunciante usa ou não um programa de voz durante o jogo.                      |
+| useVoip      | Preferência do usuário do chat de voz durante o jogo.                                    |
 | createdAt    | Data e hora em que o anúncio foi criado.                                          |
 
 ### Relações
