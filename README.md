@@ -117,7 +117,7 @@ Representa um anúncio publicado para um jogo na aplicação.
 | useVoip      | Se o anunciante usa ou não um programa de voz durante o jogo.                      |
 | createdAt    | Data e hora em que o anúncio foi criado.                                          |
 
-## Relações
+### Relações
 
 - O modelo `Ad` possui uma relação `game` com o modelo `Game`, onde `gameId` é um chave estrangeira que referencia o campo `id` do modelo `Game`.
 
