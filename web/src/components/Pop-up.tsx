@@ -61,7 +61,7 @@ export default function Popup() {
   const [useVoip, setVoip] = useState(false)
   const [game, setGames] = useState<Game[]>([])
 
-  //! Rotas do backend
+  //! Backend Route
   useEffect(() => {
     axios('http://localhost:3000/games').then(response => {
       setGames(response.data)
